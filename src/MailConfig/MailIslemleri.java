@@ -15,8 +15,8 @@ public class MailIslemleri {
     
     // Değişkenler 
     
-    private String mailAdresim = "sayars244@gmail.com";
-    private String mailSifrem = "dtckgrnwjhvyigit";
+    private String mailAdresim = "okulbilgisistemi.1@gmail.com";
+    private String mailSifrem = "lebjdpnetbbnklkx";
     private String sifreKurtarmaKodu = "";
     private String mailIcerigi_1 = "Merhaba, \n\nŞifrenizi Öğrenmek İçin Aşağıdaki Kodu Kullanınız\n\n";
     private String mailIcerigi_2 = "\n\nİyi Günler";
@@ -65,8 +65,8 @@ protected void propertiesDegerleriniOlustur(){
       mesaj.setText(mailIcerigi_1 + this.sifreKurtarmaKodu + mailIcerigi_2);
       mesaj.setSubject(mailBasligi);
       
-     // Transport.send(mesaj);  // Maile Gidecek kod
-      System.out.println("KURTARMA KODU : " + sifreKurtarmaKodu);
+        Transport.send(mesaj);  // Maile Gidecek kod
+      //System.out.println("KURTARMA KODU : " + sifreKurtarmaKodu);
   }
   
   public String kurtarmaSifresiUret(){

@@ -26,7 +26,7 @@ public class SQLKullaniciIslemleri {
         
         
         //Bu bilgiler Db'den gelecek
-        this.mailAtilacakAdres = "okulbilgisistemi.1@gmail.com";
+        this.mailAtilacakAdres = "sayars244@gmail.com";
         this.unutulanSifre = "123456";
     }
     
